@@ -1,0 +1,31 @@
+{
+  "name": "@vandeurenglenn/editor-fields-example",
+  "version": "1.0.0",
+  "description": "Editor view using Monaco",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VandeurenGlenn/editor-fields-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VandeurenGlenn/editor-fields-example/issues"
+  },
+  "homepage": "https://github.com/VandeurenGlenn/editor-fields-example#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.21.6"
+  },
+  "dependencies": {
+    "@vandeurenglenn/editor-fields": "^1.0.1"
+  }
+}
