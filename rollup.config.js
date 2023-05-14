@@ -12,6 +12,14 @@ const clean = () => {
   return
 }
 
+const copyWorkers = () => {
+  execSync('cp ./node_modules/@vandeurenglenn/editor-fields/exports/ts.worker.js www/ts.worker.js')
+  execSync('cp ./node_modules/@vandeurenglenn/editor-fields/exports/html.worker.js www/html.worker.js')
+  execSync('cp ./node_modules/@vandeurenglenn/editor-fields/exports/css.worker.js www/css.worker.js')
+  execSync('cp ./node_modules/@vandeurenglenn/editor-fields/exports/editor.worker.js www/editor.worker.js')
+  return
+}
+
 export default [{
   input: 'src/shell.js',
   output: {
@@ -20,6 +28,7 @@ export default [{
   },
   plugins: [
     clean(),
+    copyWorkers(),
     resolve({mainFields: ['browser', 'module', 'main']})
   ]
 }]
